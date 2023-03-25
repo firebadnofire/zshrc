@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Welcome to the Bash Terminal User Interface (TUI)"
 echo "Select your distro to install importent software then select 7 to install zsh:"
 
