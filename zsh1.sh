@@ -1,4 +1,4 @@
-echo "Select your distro to install importent software then select 7 to install zsh:"
+echo "Select your distro to install importent software then select 8 to install zsh:"
 
 echo ""
 echo "1) Debian/Debian based"
@@ -9,7 +9,7 @@ echo "5) Arch/Arch based"
 echo "6) macOS Catalina or Later"
 echo "7) FreeBSD"
 echo "8) Exit"
-read -p "Enter your choice (1-7): " choice
+read -p "Enter your choice (1-8): " choice
 
 if [ $choice -eq 1 ]; then
     curl https://raw.githubusercontent.com/firebadnofire/zshrc/main/apt-fash.sh | bash; curl -o ~/aptf https://raw.githubusercontent.com/firebadnofire/zshrc/main/apt-fast.conf; sudo mv ~/aptf /etc/apt-fast.conf; sudo apt-fast install -y zsh curl git fzy
