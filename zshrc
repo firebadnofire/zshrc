@@ -24,4 +24,5 @@ echo Packages to upgrade:
 /usr/sbin/pkg version | grep -v = | wc -l
 alias list-updates="pkg version -vIL="
 export EDITOR=/usr/local/bin/vim
+alias f="find . -type f | fzy"
 neofetch
