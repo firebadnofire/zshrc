@@ -29,13 +29,13 @@ elif [ $choice -eq 6 ]; then
 elif [ $choice -eq 7 ]; then
     su - root -c "pkg install zsh fzy"
 elif [ $choice -eq 8 ]; then
-    exit
+	mkdir ~/.zshell
+	curl -Lo ~/.zshell/zsh-autosuggestions.zsh https://infotoast.org/aka/zshsuggest
+	curl -Lo ~/.zshell/zsh-syntax-highlighting.zsh https://infotoast.org/aka/zshsyntax
+	curl -o ~/.zshrc https://raw.githubusercontent.com/firebadnofire/zshrc/main/zshrc
+	echo ""
+	exit
 else
     echo "Invalid selection"
 fi
 done
-mkdir ~/.zshell
-curl -Lo ~/.zshell/zsh-autosuggestions.zsh https://infotoast.org/aka/zshsuggest
-curl -Lo ~/.zshell/zsh-syntax-highlighting.zsh https://infotoast.org/aka/zshsyntax
-curl -o ~/.zshrc https://raw.githubusercontent.com/firebadnofire/zshrc/main/zshrc
-echo ""
