@@ -1,6 +1,6 @@
 # BEGIN zsh data
 # Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zshell/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
@@ -9,7 +9,7 @@ ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS=('chown -R * /' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS=('chmod -R * /' 'fg=white,bold,bg=red')
 # Auto Suggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zshell/zsh-autosuggestions.zsh
 # begin zsh options
 setopt notify
 setopt correct
