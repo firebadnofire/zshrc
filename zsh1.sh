@@ -1,5 +1,6 @@
 echo "Select your distro to install importent software then select 8 to install zsh:"
-
+while true
+do
 echo ""
 echo "1) Debian/Debian based"
 echo "2) Raspberry Pi"
@@ -32,6 +33,7 @@ elif [ $choice -eq 8 ]; then
 else
     echo "Invalid selection"
 fi
+done
 mkdir ~/.zshell
 curl -Lo ~/.zshell/zsh-autosuggestions.zsh https://infotoast.org/aka/zshsuggest
 curl -Lo ~/.zshell/zsh-syntax-highlighting.zsh https://infotoast.org/aka/zshsyntax
